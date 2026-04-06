@@ -36,3 +36,14 @@ output.logs/
 
 # OS files
 .DS_Store
+
+# Python package build artifacts
+*.egg
+*.whl
+.tox/
+pip-wheel-metadata/
+
+# Local development
+*.swp
+*.swo
+*~

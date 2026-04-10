@@ -1,5 +1,5 @@
 """
-Core logger implementation for savvas_logger.
+Core logger implementation for slogger.
 """
 
 import inspect
@@ -23,7 +23,7 @@ def _resolve_log_file() -> Path:
 
     Strategy
     --------
-    1. Find the first frame OUTSIDE savvas_logger — that is the caller's file.
+    1. Find the first frame OUTSIDE slogger — that is the caller's file.
        e.g. /home/savvas/myproject/services/user.py
     2. Walk up its directory tree looking for a project-root marker:
        pyproject.toml, setup.py, setup.cfg, or .git
@@ -40,7 +40,7 @@ def _resolve_log_file() -> Path:
     _ROOT_MARKERS = {"pyproject.toml", "setup.py", "setup.cfg", ".git"}
     _THIS_PACKAGE = Path(__file__).parent.resolve()
 
-    # Step 1: find the first frame outside savvas_logger
+    # Step 1: find the first frame outside slogger
     caller_file: Optional[Path] = None
     for frame_info in inspect.stack():
         frame_path = Path(frame_info.filename).resolve()

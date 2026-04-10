@@ -1,5 +1,5 @@
 """
-Tests for savvas_logger.Logger class.
+Tests for slogger.Logger class.
 Run with:  pytest tests/ -v
 """
 
@@ -10,7 +10,7 @@ import tempfile
 
 import pytest
 
-from savvas_logger import Logger, ColorFormatter, JsonFormatter, SMTPConfig
+from slogger import Logger, ColorFormatter, JsonFormatter, SMTPConfig
 
 
 # ── in-memory handler ─────────────────────────────────────────────────────────

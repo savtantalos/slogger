@@ -1,6 +1,6 @@
 """
-savvas_logger
-=============
+slogger
+=======
 
 A plug-and-play Python logging package with:
 - ANSI-colour console output
@@ -10,9 +10,9 @@ A plug-and-play Python logging package with:
 
 Quick start
 -----------
->>> from savvas_logger import get_logger
->>> log = get_logger(__name__, log_to_console=True, log_format="color")
->>> log.info("Hello from savvas_logger!")
+>>> from slogger import Logger
+>>> log = Logger(name=__name__, log_to_console=True, log_format="color")
+>>> log.info("Hello from slogger!")
 """
 
 from .logger import Logger

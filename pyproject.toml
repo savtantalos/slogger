@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "slogger"
-version = "0.1.0"
+version = "0.1.1"
 description = "A plug-and-play Python logging package with color output, JSON formatting, rotation, and SMTP alerts"
 authors = [
     {name = "Savvas", email = "savvas@example.com"}
